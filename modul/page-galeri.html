@@ -1,0 +1,26 @@
+<main id="main" data-aos="fade" data-aos-delay="300">
+  <div class="page-header d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="season_name">SEASON</h2>
+          <p>Berikut beberapa dokumentasi yang berhasil diabadikan terkait <b> Program Rp. 10.000 Menguasai Dunia Bersama WKD48 - <span class="text-warning season_name">SEASON</span></b></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+        <div id="image-container" class="row gy-4 justify-content-center"></div>
+      </div>
+    </section>
+  </main>
+</main>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.season_name').html(detail)
+    generateImageGaleria(urlBase,spreadsheetId,apiKey,detail)
+  });
+</script>

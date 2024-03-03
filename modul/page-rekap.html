@@ -1,0 +1,115 @@
+<main id="main" data-aos="fade" data-aos-delay="300">
+
+  <!-- ======= End Page Header ======= -->
+  <div class="page-header d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="season_name">SEASON</h2>
+          <p class="season_description"></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Page Header -->
+
+  <div id="data-detail" hidden>
+
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-people"></i>
+              <h4><a href="" class="stretched-link">Jumlah Peserta</a></h4>
+              <p>Program ini diikuti sebanyak <b class="text-warning str_peserta">Peserta</b> yang turut andil secara konsisten dalam periode ini.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="" class="stretched-link">Donasi Peserta</a></h4>
+              <p>Dana yang terkumpul oleh Peserta yakni sebesar  <b class="text-warning str_donasipeserta">Rp. 0</b></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-cash-stack"></i>
+              <h4><a href="" class="stretched-link">Donasi Non-Peserta</a></h4>
+              <p>Adapun dana yang terkumpul oleh selain Peserta yakni sebesar  <b class="text-warning str_donasinonpeserta">Rp. 0</b></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-check-circle-fill"></i>
+              <h4><a href="" class="stretched-link">Total Dana Terkumpul</a></h4>
+              <p>Dari seluruh dana yang terkumpul berdasarkan Donasi Peserta & Non-Peserta maka diperoleh akumulasi dana sebesar <b class="text-warning str_terkumpul">Rp. 0</b></p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Gallery Single Section ======= -->
+    <section id="gallery-single" class="gallery-single" style="margin-top:20px;">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>Rp. 10.000 Menguasai Dunia Bersama WKD48 - <span class="text-warning season_name">SEASON</span></h2>
+              <p>
+                Program Rp. 10.000 Menguasai Dunia Bersama WKD48 - <span class="season_name">SEASON</span> berlangsung selama <b class="str_durasi">Bulan</b>, terhitung dari <b class="str_periode"></b>. Adapun status program Rp. 10.000 Menguasai Dunia Bersama WKD48 - <span class="season_name">SEASON</span> saat ini telah selesai.
+              </p>
+
+                          <p>
+                Berikut adalah rincian dana yang masuk dari <b>Non-Peserta</b> Program Rp. 10.000 Menguasai Dunia Bersama WKD48 - <span class="season_name">SEASON</span>:
+              </p>
+              
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul style="list-style: none;" id="data-pemasukan"></ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+                  <div class="col-lg-3">
+            <div class="portfolio-info">
+              <h3>Pemakaian Dana</h3>
+              <ul id="data-pemanfaatandana"></ul>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Gallery Single Section -->
+
+    
+    <section id="pricing" class="pricing">
+        <div class="container">
+
+          <div class="section-header">
+            <h2>Maacih</h2>
+            <p>Special Thanks To</p>
+          </div>
+
+          <div class="row gy-4 gx-lg-5" id="data-orangbaik"></div>
+      </section>
+   </div>    
+</main>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.season_name').html(detail)
+    getSeasonInformasi(urlBase,spreadsheetId,apiKey,detail)
+  });
+</script>
